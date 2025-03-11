@@ -101,7 +101,7 @@ class Firefox(RemoteWebDriver, WebDriverMixin):
     def _get_undetected_firefox_path(self) -> str:
         """Get the path for the undetected Firefox."""
         return self._platform_dependent_params["undetected_path"].format(
-            USER=os.getlogin()
+            HOME_PATH=os.path.expanduser("~")
         )
 
     def _create_undetected_firefox_directory(self) -> str:

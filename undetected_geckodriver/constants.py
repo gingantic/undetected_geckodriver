@@ -25,7 +25,7 @@ PLATFORM_DEPENDENT_PARAMS = {
             "/usr/lib/firefox-trunk",
             "/usr/lib/firefox-beta",
         ],
-        "undetected_path": "/home/{USER}/.cache/undetected_firefox/",
+        "undetected_path": "{HOME_PATH}/.cache/undetected_firefox/",
         "xul": "libxul.so",
     },
 }
